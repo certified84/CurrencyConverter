@@ -18,5 +18,6 @@ data class ConversionResponse(
     val query: QueryParams,
     val info: Information,
     val date: String,
-    val result: Double
+    val result: Double,
+    val error: ErrorResponse
 )

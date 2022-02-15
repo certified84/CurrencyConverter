@@ -25,19 +25,25 @@ class MainActivityViewModel @Inject constructor(
     private val _conversionResponse = MutableLiveData<ConversionResponse>()
     val conversionResponse: LiveData<ConversionResponse> get() = _conversionResponse
 
+    private val _success = MutableLiveData<Boolean>()
+    val success: LiveData<Boolean> get() = _success
+
     fun convert(access_key: String, from: String, to: String, amount: Int) {
         viewModelScope.launch {
             try {
                 val response = repository.convert(access_key, from, to, amount)
+                _success.value = response.isSuccessful
                 if (response.isSuccessful) {
                     uiState.set(UIState.SUCCESS)
                     _conversionResponse.value = response.body()
+                    Log.d("TAG", "convert: conversionResponse: ${response.body()}")
                 } else {
-                    uiState.set(UIState.EMPTY)
+                    uiState.set(UIState.FAILURE)
                     val error = apiErrorUtil.parseError(response)
                     Log.d("TAG", "convert: error: ${error?.error}")
                 }
             } catch (t: Throwable) {
+                uiState.set(UIState.FAILURE)
                 t.printStackTrace()
             }
         }

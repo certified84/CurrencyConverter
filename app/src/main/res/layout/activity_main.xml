@@ -79,7 +79,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/open_sans_regular"
-                    android:hint="@string/from"
+                    android:hint="@string/amount"
                     android:inputType="textPersonName"
                     android:padding="@dimen/_8sdp"
                     android:textColor="@color/black" />
@@ -91,6 +91,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:alpha=".5"
+                android:paddingEnd="@dimen/_8sdp"
                 android:background="@color/hintBackgroundColor"
                 android:gravity="center"
                 android:textSize="@dimen/_14ssp"
@@ -114,6 +115,8 @@
                 app:boxStrokeColor="@null"
                 app:boxStrokeWidth="0dp"
                 app:hintEnabled="false"
+                android:clickable="false"
+                android:focusable="false"
                 app:layout_constraintEnd_toStartOf="@+id/tv_to"
                 app:layout_constraintStart_toStartOf="@+id/btn_nav_bar"
                 app:layout_constraintTop_toBottomOf="@+id/et_from_layout">
@@ -123,7 +126,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/open_sans_regular"
-                    android:hint="@string/to"
+                    android:hint="@string/result"
+                    android:clickable="false"
+                    android:focusable="false"
                     android:inputType="textPersonName"
                     android:padding="@dimen/_8sdp"
                     android:textColor="@color/black" />
@@ -135,6 +140,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:alpha=".5"
+                android:paddingEnd="@dimen/_8sdp"
                 android:background="@color/hintBackgroundColor"
                 android:gravity="center"
                 android:textSize="@dimen/_14ssp"
@@ -161,10 +167,10 @@
                 app:layout_constraintHorizontal_chainStyle="packed"
                 app:layout_constraintStart_toStartOf="@+id/et_to_layout"
                 app:layout_constraintTop_toBottomOf="@+id/et_to_layout"
-                app:startIconDrawable="@drawable/ic_menu_icon">
+                app:startIconDrawable="@drawable/ic_baseline_flag_24">
 
                 <com.google.android.material.textfield.MaterialAutoCompleteTextView
-                    android:id="@+id/et_visitor_type"
+                    android:id="@+id/et_from_drop_down"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/open_sans_regular"
@@ -205,7 +211,7 @@
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/appCompatImageView2"
                 app:layout_constraintTop_toBottomOf="@+id/et_to_layout"
-                app:startIconDrawable="@drawable/ic_menu_icon">
+                app:startIconDrawable="@drawable/ic_baseline_flag_24">
 
                 <com.google.android.material.textfield.MaterialAutoCompleteTextView
                     android:id="@+id/et_to_drop_down"
@@ -243,7 +249,7 @@
                 android:layout_marginEnd="@dimen/_4sdp"
                 android:text="Mid-market exchange rate at 13:38 UTC"
                 android:textColor="@color/colorSecondary"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toBottomOf="@+id/appCompatImageView3"
                 app:layout_constraintEnd_toStartOf="@+id/appCompatImageView3"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintHorizontal_chainStyle="packed"

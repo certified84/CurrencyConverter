@@ -3,8 +3,6 @@ package com.certified.currencyconverter.data.network
 import com.certified.currencyconverter.data.model.ConversionResponse
 import retrofit2.Response
 import retrofit2.http.GET
-import retrofit2.http.Header
-import retrofit2.http.Headers
 import retrofit2.http.Query
 
 interface ConverterApiService {
