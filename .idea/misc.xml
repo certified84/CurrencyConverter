@@ -3,7 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/SAMSON/StudioProjects/CurrencyConverter/app/src/main/res/layout/activity_main.xml" value="0.5" />
+        <entry key="..\:/Users/SAMSON/StudioProjects/CurrencyConverter/app/src/main/res/drawable/ic_currency_calculator_text.xml" value="0.1" />
+        <entry key="..\:/Users/SAMSON/StudioProjects/CurrencyConverter/app/src/main/res/drawable/ic_info_black_rounded_24dp.xml" value="0.2135" />
+        <entry key="..\:/Users/SAMSON/StudioProjects/CurrencyConverter/app/src/main/res/drawable/ic_menu_icon.xml" value="0.1" />
+        <entry key="..\:/Users/SAMSON/StudioProjects/CurrencyConverter/app/src/main/res/drawable/ic_swap_horiz_black_24dp.xml" value="0.2135" />
+        <entry key="..\:/Users/SAMSON/StudioProjects/CurrencyConverter/app/src/main/res/layout/activity_main.xml" value="0.25" />
       </map>
     </option>
   </component>

@@ -12,4 +12,7 @@
     <color name="colorPrimaryDark">#017E58</color>
     <color name="colorSecondary">#0066DC</color>
     <color name="colorSecondaryDark">#002D61</color>
+    <color name="boxBackgroundColor">#51888888</color>
+    <color name="hintBackgroundColor">#AD888888</color>
+    <color name="infoBackgroundColor">#FCD6D6D6</color>
 </resources>
